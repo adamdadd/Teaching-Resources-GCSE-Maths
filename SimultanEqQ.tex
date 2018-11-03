@@ -47,42 +47,179 @@ Secondary Maths Tuition} %if necessary, replace with your course title
  
 \maketitle
  
-\question E Solve. \[\begin{split}3x + 2y = 8 \\ 2x - 5y = 18 \end{split}\]
+\begin{question} 
+1
+Solve.
+\begin{align*}
+    3x + 2y &= 8 \\
+    2x - 5y &= 18 
+\end{align*}
+\end{question}
+\vspace{\stretch{1}}
+Help and answers on following pages ................................................................................
+\clearpage
 
- 
 \begin{solution} %You can also use solution in place of proof.
 The above is an example of simultaneous equations. Simultaneous equations are required when you have 2 or more unknown variables. In the above equations these are $x$ and $y$. \\
 Firstly an equations cannot be solved when there are 2 unknowns, this is why we use a second equation we can use to remove one of the unknowns at a time. \\
 We can do this a few different ways:
 \begin{enumerate}
-    \item ADDITION. \\
+    \item ELIMINATION (ADDITION). \\
         Multiply through one or both equations so that when they are added only one unknown variable remains. \\
-    \item SUBTRACTION. \\
+    \item ELIMINATION (SUBTRACTION). \\
         Same as above but this time subtract rather than add. \\
-        Remember minus signs!: \\
-        $Positive + Positive = Positive$ \\
-        $Negative + Negative = Negative$ \\
-        $Positive + Negative = Negative$ \\       
+     
     \item SUBSTITUTION. \\
         By rearranging one of the equations to $x =$ or $y =$ and then substituting this new equation into the other equation that was not rearranged leaves only one unknown. \\
 \end{enumerate}
 
-Finally after one of the  unknowns is solved this can then be substituted into one of the equations given in the question to solve for the other variable.
+\begin{center}
+    YOU ONLY NEED TO USE ONE OF THESE METHODS PER PROBLEM. \\
+    (It's best to know how to do them all sometimes using one is easier than the other.)
+\end{center}
+
+Reminder: Don't forget sign rules!: \\
+\begin{align*}
+        + \times +  &= + \\
+        - \times - &= + \\
+        + \times - &= - \\
+        - \times + &= -
+\end{align*}
+
+Finally after one of the  unknowns is solved this can then be substituted into one of the equations given in the question to solve for the other variable. \\
+
+CHECK! Remember to substitute your values for $x$ and $y$ into the remaining equations to see if it makes sense, if one side doesn't equal the other go back and check your working for any mistakes.
 %Note 1: The * tells LaTeX not to number the lines.  If you remove the *, be sure to remove it below, too.
 %Note 2: Inside the align environment, you do not want to use $-signs.  The reason for this is that this is already a math environment. This is why we have to include \text{} around any text inside the align environment.
 \clearpage
 
 \begin{enumerate}
-    \item ADDITION. \\
+    \item ELIMINATION (ADDITION). \\
+    Multiply by 5:
     \begin{align*}
         3x + 2y &= 8  \\
         \implies 15x + 10y &= 40
     \end{align*}
-    \item SUBTRACTION. \\
-     
+    Multiply by 2:
+    \begin{align*}
+        2x - 5y &= 8 \\
+        4x - 10y &= 36
+    \end{align*}
+    Adding the 2 resulting equations:
+    \begin{align*}
+        15x + 10y &= 40 \\
+        + 4x - 10y &= 36 \\
+        \implies 19x &= 76 \\
+        \implies x &= \frac{76}{19} \\
+        \implies x &= 4
+    \end{align*}
+    NOT DONE YET! Substitute $x=4$ into one of the given equations:
+    \begin{align*}
+        3x + 2y &= 8 \\
+        \implies 3(4) + 2y &= 8 \\
+        \implies 12 +2y &= 8 \\
+        \implies 2y &= 8 - 12 \\
+        \implies 2y &= -4 \\
+        \implies y &= -2
+    \end{align*}
+    Therefore:
+    \begin{align*}
+        x &= 4 \\
+        y &= -2
+    \end{align*}
+    CHECK in unused equation:
+    \begin{align*}
+        2x - 5y &= 18 \\
+        2(4) - 5(-2) &= 18 \\
+        8 - (-10) &= 18 \\
+        18 &= 18
+    \end{align*}
+    This proves that the $x=4$ and $y = -2$ are the correct values.
+\clearpage
+
+    \item ELIMINATION (SUBTRACTION). \\
+        As this is pretty much the same as above I'll use a different multiplier so you can see that you can multiply through by any number. \\
+        \\
+        Let's multiply by $\frac{3}{2}$ (Just to prove it works with any number): \\
+        TIP: When you don't have a calculator it can be easier to leave numbers as fractions until the  end! \\
+        \begin{align*}
+            \frac{3}{2} \times (2x - 5y &= 18) \\
+            \implies 3x - \frac{15}{2}y &= \frac{3}{2} \times 18 
+        \end{align*}
+        
+        Since we already have a $3x$ in the first equation lets go ahead and subtract them:
+        
+        \begin{align*}
+            3x + 2y &= 8 \\
+            - (3x - \frac{15}{2}y &= \frac{3}{2} \times 18) \\
+            \implies 2y + \frac{15}{2}y &= 8 - \frac{3}{2} \times 18 \\
+            \implies \frac{19}{2}y &= \frac{16}{2} - \frac{54}{2} \\
+                                     &= - \frac{38}{2} \\
+            \implies 8y &= -19 \\
+            \implies y &= \frac{-19}{2} \\
+            \implies y &= -2
+        \end{align*}
+    You know what we're going to to do now... Yeah that's right sub in one of the equations from the question: \\
+    
+        \begin{align*}
+            3x + 2y &= 8 \\
+            \implies 3x + 2(-2) &= 8 \\
+            \implies 3x + (-4) &= 8 \\
+            \implies 3x - 4 &= 8 \\
+            \implies 3x &= 8 + 4 \\
+            \implies x &= \frac{12}{3} \\
+            \implies x &= 4
+        \end{align*}
+    
+    CHECK in other equation: \\
+    We've checked these numbers in 1. ELIMINATION (ADDITION).
+\clearpage
+
     \item SUBSTITUTION. \\
- 
+        Multiply by $\frac{1}{2}$:
+        
+        \begin{align*}
+            \frac{1}{2} \times (2x - 5y &= 18) \\
+            \implies  x - \frac{5}{2}y &= 9
+        \end{align*}
+        
+        Rearrange for $x =$ :
+        
+        \begin{align*}
+            \implies x = \frac{5}{2}y + 9
+        \end{align*}
+        
+        Sub into the other equation:
+        
+        \begin{align*}
+            3x + 2y &= 8 \\
+            3\bigg(\frac{5}{2}y + 9\bigg) + 2y &= 8
+        \end{align*}
+        
+        Simplify:
+        
+        \begin{align*}
+            \implies \frac{15}{2}y +2y +27 &=  8 \\
+            \implies \frac{15}{2}y +2y &= 8 - 27 \\
+            \implies \frac{19}{2}y &= -19 \\
+            \implies y &= -2
+        \end{align*}
+        
+        Sub $y = -2$ into equation:
+        
+        \begin{align*}
+         3x + 2y &= 8 \\
+         \implies  3x + 2(-2) &= 8 \\
+         \implies 3x &= 12 \\
+         \implies x &= 4
+        \end{align*}
+        
+        Do the CHECK like previous times! See 1. ELIMINATION (ADDITION).
 \end{enumerate}
+
+\begin{center}
+    \bf END OF QUESTION 1
+\end{center}
 
 \end{solution}
  
