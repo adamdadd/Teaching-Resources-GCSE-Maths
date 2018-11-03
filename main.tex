@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to writeLaTeX --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you give 
+% someone the link to this page, they can edit at the same
+% time. See the help menu above for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+\title{Simultaneous Equations Question}%replace X with the appropriate number
+\author{Adam Dad\\ %replace with your name
+Secondary Maths Tuition} %if necessary, replace with your course title
+ 
+\maketitle
+ 
+\question E Solve. \[\begin{split}3x + 2y = 8 \\ 2x - 5y = 18 \end{split}\]
+
+ 
+\begin{solution} %You can also use solution in place of proof.
+The above is an example of simultaneous equations. Simultaneous equations are required when you have 2 or more unknown variables. In the above equations these are $x$ and $y$. \\
+Firstly an equations cannot be solved when there are 2 unknowns, this is why we use a second equation we can use to remove one of the unknowns at a time. \\
+We can do this a few different ways:
+\begin{enumerate}
+    \item ADDITION. \\
+        Multiply through one or both equations so that when they are added only one unknown variable remains. \\
+    \item SUBTRACTION. \\
+        Same as above but this time subtract rather than add. \\
+        Remember minus signs!: \\
+        $Positive + Positive = Positive$ \\
+        $Negative + Negative = Negative$ \\
+        $Positive + Negative = Negative$ \\       
+    \item SUBSTITUTION. \\
+        By rearranging one of the equations to $x =$ or $y =$ and then substituting this new equation into the other equation that was not rearranged leaves only one unknown. \\
+\end{enumerate}
+
+Finally after one of the  unknowns is solved this can then be substituted into one of the equations given in the question to solve for the other variable.
+%Note 1: The * tells LaTeX not to number the lines.  If you remove the *, be sure to remove it below, too.
+%Note 2: Inside the align environment, you do not want to use $-signs.  The reason for this is that this is already a math environment. This is why we have to include \text{} around any text inside the align environment.
+\clearpage
+
+\begin{enumerate}
+    \item ADDITION. \\
+    \begin{align*}
+    3x + 2y &= 8 \\
+    \implies 15x + 10y &= 40
+    
+    \end{align*}
+    \item SUBTRACTION. \\
+     
+    \item SUBSTITUTION. \\
+ 
+\end{enumerate}
+
+\end{solution}
+ 
+ 
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+ 
+\end{document}
